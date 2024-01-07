@@ -1,0 +1,20 @@
+service: vectordb-js-lambda
+
+plugins:
+  - serverless-esbuild # Used for compiling/packaging the Typescript code
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: eu-west-1
+
+custom:
+  esbuild:
+    external:
+      - "vectordb" # We put `vectordb` in the external dependencies, so that at runtime it can properly import `@lancedb/vectordb-linux-x64-gnu`
+
+functions:
+  testVectorDbImport:
+    handler: ./lambda.testVectorDbImport
+    layers:
+      - REPLACE_THIS_VALUE_WITH_YOUR_LAYER_ARN # We use this layer to provide the `@lancedb/vectordb-linux-x64-gnu` binary

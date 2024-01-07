@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "vectordb": "0.4.2",
+    "@lancedb/vectordb-linux-x64-gnu": "0.4.2"
+  }
+}
