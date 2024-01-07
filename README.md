@@ -5,7 +5,7 @@ This repo acts as a small demo to showcase how to use the [vectordb](https://www
 In this repo, we
 
 - Provide an example `serverless.yml` file and corresponding code to deploy a Lambda function with the Serverless framework and `serverless-esbuild` (this can be found in the `deployment-example` folder)
-- Provide a .zip of a Lambda layer for `vector-db` (version 0.4.2) needed for the Lambda to properly use `vector-db`
+- Provide a .zip of a Lambda layer for `vectordb` (version 0.4.2) needed for the Lambda to properly use `vectordb`
 - Explain shortly (in this README) how we made this .zip, and how we can then use it as a Lambda layer
 - Explain further some details of this approach and how it could be improved/extended
 
